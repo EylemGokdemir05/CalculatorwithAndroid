@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <EditText
+        android:id="@+id/txt_sayi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="Sayı girin"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="92dp" />
+
+    <EditText
+        android:id="@+id/txt_sayi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="Sayı girin"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="209dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="105dp"
+        android:layout_marginEnd="100dp">
+
+        <Button
+            android:id="@+id/btn_toplama"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:onClick="topla"
+            android:text="+"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="320dp" />
+
+        <Button
+            android:id="@+id/btn_cikarma"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:onClick="cikar"
+            android:text="-"
+            tools:layout_editor_absoluteX="217dp"
+            tools:layout_editor_absoluteY="320dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="105dp"
+        android:layout_marginEnd="100dp">
+
+        <Button
+            android:id="@+id/btn_carpma"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:onClick="carp"
+            android:text="x"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="402dp" />
+
+        <Button
+            android:id="@+id/btn_bolme"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:onClick="bol"
+            android:text="/"
+            tools:layout_editor_absoluteX="217dp"
+            tools:layout_editor_absoluteY="402dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txt_sonuc"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginEnd="160dp"
+        android:hint="Sonuç:0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="114dp" />
+</LinearLayout>
